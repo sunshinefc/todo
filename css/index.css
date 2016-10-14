@@ -1,0 +1,469 @@
+@charset "UTF-8";
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 100px; } }
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 86.25px; } }
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 85.83333px; } }
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 79.16667px; } }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 78.125px; } }
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 75px; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 66.66667px; } }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * @module fade
+ * @description 定义淡入落下动画
+ * @method fade-in-down
+ */
+@-webkit-keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0); } }
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+.ani.fade-in-down {
+  -webkit-animation-name: fade-in-down;
+  animation-name: fade-in-down; }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * @module zoom
+ * @description 定义放大进入动画
+ * @method zoom-in
+ */
+@-webkit-keyframes zoom-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+
+.ani.zoom-in {
+  -webkit-animation-name: zoom-in;
+  animation-name: zoom-in; }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * @module fade
+ * @description 定义从左侧淡入动画
+ * @method fade-in-left
+ */
+@-webkit-keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0); } }
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+.ani.fade-in-left {
+  -webkit-animation-name: fade-in-left;
+  animation-name: fade-in-left; }
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url(../iconfont.woff); }
+
+.icon-font {
+  font-family: "iconfont" !important; }
+
+.icon-drawer:before {
+  content: "\e6b8"; }
+
+.icon-bao:before {
+  content: "\e617"; }
+
+.icon-yule:before {
+  content: "\f00b3"; }
+
+.icon-yule1:before {
+  content: "\e65f"; }
+
+.icon-gouwuche:before {
+  content: "\e66d"; }
+
+.icon-qian:before {
+  content: "\e688"; }
+
+.icon-qian1:before {
+  content: "\e635"; }
+
+.icon-jitui:before {
+  content: "\e602"; }
+
+.icon-qianbi:before {
+  content: "\e669"; }
+
+.icon-edit:before {
+  content: "\e653"; }
+
+.icon-shezhi:before {
+  content: "\e638"; }
+
+.icon-shezhi1:before {
+  content: "\e61a"; }
+
+.icon-nav:before {
+  content: "\e7c9"; }
+
+.icon-nav1:before {
+  content: "\e601"; }
+
+.icon-xingxing:before {
+  content: "\e754"; }
+
+.icon-xingxing1:before {
+  content: "\e616"; }
+
+.icon-duihao:before {
+  content: "\e600"; }
+
+.icon-duihao1:before {
+  content: "\e624"; }
+
+.icon-naozhong:before {
+  content: "\e62e"; }
+
+.icon-naozhong1:before {
+  content: "\e634"; }
+
+.icon-star-copy:before {
+  content: "\e601"; }
+
+.icon-jiantouzuo:before {
+  content: "\e616"; }
+
+.icon-arrow-left:before {
+  content: "\e645"; }
+
+.icon-1:before {
+  content: "\e6c2"; }
+
+.icon-xueweilimao:before {
+  content: "\e648"; }
+
+.icon-boshimao:before {
+  content: "\e60d"; }
+
+.big-box {
+  width: 100%; }
+
+.header {
+  height: 0.74rem;
+  background-color: #11bba0;
+  position: relative; }
+  .header .nav {
+    width: 0.28rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin: auto;
+    left: 0.19rem;
+    color: #fff;
+    font-size: 0.28rem;
+    font-weight: bold;
+    line-height: 0.25rem;
+    text-align: center; }
+  .header span {
+    font-size: 0.28rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.42rem;
+    line-height: 0.74rem;
+    color: #fff; }
+  .header .set {
+    width: 0.34rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.19rem;
+    color: #fff;
+    line-height: 0.34rem;
+    font-size: 0.34rem; }
+
+.choose {
+  width: 1.6rem;
+  height: 5rem;
+  background: #000;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -2rem; }
+
+.finish {
+  width: 100%;
+  height: 0.95rem;
+  line-height: 0.95rem;
+  background: #dadbdb;
+  font-size: 0.24rem;
+  color: #4e6061; }
+  .finish span {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    float: left; }
+  .finish .active {
+    color: #11bba0; }
+
+.content {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  opacity: 0; }
+  .content li {
+    height: 1.12rem;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #e0e4e5;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    line-height: 1.12rem;
+    color: #4e6061;
+    position: relative; }
+    .content li .creat {
+      width: 0.5rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      text-align: center;
+      right: 0.3rem;
+      bottom: 0.3rem;
+      position: absolute;
+      z-index: 20; }
+    .content li span {
+      display: inline-block;
+      width: 70%; }
+  .content .done span {
+    text-decoration: line-through; }
+  .content .items0 {
+    height: 1.12rem;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #e0e4e5;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    line-height: 1.12rem;
+    color: #4e6061;
+    border-left: 0.12rem solid #f4756c; }
+  .content .items1 {
+    height: 1.12rem;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #e0e4e5;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    line-height: 1.12rem;
+    color: #4e6061;
+    border-left: 0.12rem solid #f6bb6e; }
+  .content .items2 {
+    height: 1.12rem;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #e0e4e5;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    line-height: 1.12rem;
+    color: #4e6061;
+    border-left: 0.12rem solid #54d6ba; }
+  .content .items3 {
+    height: 1.12rem;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #e0e4e5;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    line-height: 1.12rem;
+    color: #4e6061;
+    border-left: 0.12rem solid #2175d5; }
+  .content .items4 {
+    height: 1.12rem;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #e0e4e5;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    line-height: 1.12rem;
+    color: #4e6061;
+    border-left: 0.12rem solid #17c7a1; }
+
+.content-box .active {
+  animation: opacity .8s ease;
+  opacity: 1; }
+
+.write {
+  width: 3rem;
+  height: 2.6rem;
+  border-radius: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  outline: hidden; }
+
+.writegai {
+  width: 3rem;
+  height: 2.6rem;
+  border-radius: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  outline: hidden; }
+
+.add {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 0.1rem;
+  background-color: #0dbba2;
+  color: #fff;
+  font-size: 0.38rem;
+  text-align: center;
+  line-height: 1rem;
+  position: fixed; }
+
+.feichu {
+  animation: feichu 0.8s ease both; }
+
+@keyframes feichu {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-100%, 0, 0); } }
+
+.plan .back {
+  width: 0.28rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.46rem;
+  color: #ffffff;
+  font-size: 0.25rem;
+  line-height: 0.25rem;
+  font-weight: bold; }
+
+.plan .queren {
+  width: 0.35rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.4rem;
+  color: #fff;
+  font-size: 0.35rem;
+  line-height: 0.25rem; }

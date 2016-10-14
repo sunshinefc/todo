@@ -1,0 +1,256 @@
+@import "mixins";
+@include useRem(480px);
+@import "classes";
+@import "fade-in-down";
+@import "zoom-in";
+@import "fade-in-left";
+
+
+body,ul,li{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+  font-family: "微软雅黑";
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url(../iconfont.woff);
+}
+.icon-font{
+  font-family: "iconfont" !important;
+}
+
+.icon-drawer:before { content: "\e6b8"; }
+.icon-bao:before { content: "\e617"; }
+.icon-yule:before { content: "\f00b3"; }
+.icon-yule1:before { content: "\e65f"; }
+.icon-gouwuche:before { content: "\e66d"; }
+.icon-qian:before { content: "\e688"; }
+.icon-qian1:before { content: "\e635"; }
+.icon-jitui:before { content: "\e602"; }
+.icon-qianbi:before { content: "\e669"; }
+.icon-edit:before { content: "\e653"; }
+.icon-shezhi:before { content: "\e638"; }
+.icon-shezhi1:before { content: "\e61a"; }
+.icon-nav:before { content: "\e7c9"; }
+.icon-nav1:before { content: "\e601"; }
+.icon-xingxing:before { content: "\e754"; }
+.icon-xingxing1:before { content: "\e616"; }
+.icon-duihao:before { content: "\e600"; }
+.icon-duihao1:before { content: "\e624"; }
+.icon-naozhong:before { content: "\e62e"; }
+.icon-naozhong1:before { content: "\e634"; }
+.icon-star-copy:before { content: "\e601"; }
+.icon-jiantouzuo:before { content: "\e616"; }
+.icon-arrow-left:before { content: "\e645"; }
+.icon-1:before { content: "\e6c2"; }
+.icon-xueweilimao:before { content: "\e648"; }
+.icon-boshimao:before { content: "\e60d"; }
+
+.big-box{
+  width: 100%;
+  //position: fixed;
+}
+.header{
+  height: 0.74rem;
+  background-color: #11bba0;
+  position: relative;
+
+  .nav{
+    width: 0.28rem;
+    height: 0.25rem;
+    @include updowm;
+    margin: auto;
+    left: 0.19rem;
+    color: #fff;
+    font-size: 0.28rem;
+    font-weight: bold;
+    line-height: 0.25rem;
+    text-align: center;
+  }
+  span{
+    font-size: 0.28rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.42rem;
+    line-height: 0.74rem;
+    color: #fff;
+  }
+  .set{
+    @include cube(0.34rem);
+    @include updowm;
+    right: 0.19rem;
+    color:#fff;
+    line-height: 0.34rem;
+    font-size: 0.34rem;
+  }
+}
+.choose{
+  width: 1.6rem;
+  height: 5rem;
+  background: #000;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -2rem;
+}
+.finish{
+  width: 100%;
+  height: 0.95rem;
+  line-height: 0.95rem;
+  background: #dadbdb;
+  font-size: 0.24rem;
+  color: #4e6061;
+  span{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+  }
+  .active{
+    color: #11bba0;
+  }
+}
+
+$device-map:(
+    'items0':#f4756c,
+    'items1':#f6bb6e,
+    'items2':#54d6ba,
+    'items3':#2175d5,
+    'items4':#17c7a1
+);
+
+.content{
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+
+  opacity: 0;
+  li{
+    height: 1.12rem;
+    background-color: #ecf0f1;
+    border-bottom: 2px solid #e0e4e5;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    line-height: 1.12rem;
+    color: #4e6061;
+    position: relative;
+    .creat{
+      @include cube(0.5rem);
+      line-height: 0.5rem;
+      text-align: center;
+      right: 0.3rem;
+      bottom: 0.3rem;
+      position: absolute;
+      z-index: 20;
+    }
+    span{
+      display: inline-block;
+      width: 70%;
+
+    }
+  }
+  //.done::after{
+  //  content: "";
+  //  width: 80%;
+  //  height: 1px;
+  //  background:#ccc;
+  //  position: absolute;
+  //  top: 0px;
+  //  left: 0px;
+  //  bottom: 0px;
+  //  margin: auto;
+  //}
+  .done {
+    span{
+
+      text-decoration: line-through ;
+    }
+    //color: #ccc;
+  }
+
+  @each $v in map_keys($device-map){
+    .#{$v}{
+      height: 1.12rem;
+      background-color: #ecf0f1;
+      border-bottom: 2px solid #e0e4e5;
+      box-sizing: border-box;
+      padding-left: 0.3rem;
+      line-height: 1.12rem;
+      color: #4e6061;
+      border-left: 0.12rem solid map-get($device-map,$v);
+
+    }
+  }
+}
+.content-box{
+  .active{
+    animation: opacity .8s ease;
+    opacity: 1;
+  }
+}
+.write{
+  width: 3rem;
+  height: 2.6rem;
+  border-radius: 0.1rem;
+  background-color: rgba(0,0,0,0.5);
+  @include center;
+  display: none;
+  outline: hidden;
+}
+
+.writegai{
+  width: 3rem;
+  height: 2.6rem;
+  border-radius: 0.1rem;
+  background-color: rgba(0,0,0,0.5);
+  @include center;
+  display: none;
+  outline: hidden;
+}
+.add{
+  @include circle(1rem);
+  @include leftright;
+  bottom: 0.1rem;
+  background-color: #0dbba2;
+  color:#fff;
+  font-size: 0.38rem;
+  text-align: center;
+  line-height: 1rem;
+  position: fixed;
+}
+.feichu{
+  animation:feichu 0.8s ease both;
+}
+@keyframes feichu{
+  0%{
+    transform:translate3d(0,0,0);
+  }
+  100%{
+    transform:translate3d(-100%,0,0);
+  }
+}
+
+.plan{
+  .back{
+    width: 0.28rem;
+    height: 0.25rem;
+    @include updowm;
+    left: 0.46rem;
+    color: #ffffff;
+    font-size: 0.25rem;
+    line-height: 0.25rem;
+    font-weight: bold;
+  }
+  .queren{
+    width: 0.35rem;
+    height: 0.25rem;
+    @include updowm;
+    right: 0.4rem;
+    color: #fff;
+    font-size: 0.35rem;
+    line-height: 0.25rem;
+  }
+}
